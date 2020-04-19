@@ -1,4 +1,4 @@
-# Mi blog
+# Mi blog 📇
 
 Blog estático de pruebas.
 

@@ -1,2 +1,13 @@
-# mi-blog
-Blog estático de prueba. Realizado con lo aprendido de diversos cursos de diseño con HTML, CSS y Responsive Design.
+# Mi blog
+
+Blog estático de pruebas.
+
+Realizado a partir de diversos cursos de diseño web front-end 👩‍💻
+
+### Incluye las tecnologías:
+
+- HTML
+- CSS
+- CSS Grid
+- Responsive Design
+

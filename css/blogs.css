@@ -82,11 +82,12 @@ header {
 .featured-post {
     grid-area: featured-post;
     background-color: rgb(236, 130, 112);
-    padding: 0 10% 1em;
+    padding: 0 5% 1em;
     display: grid;
     grid-template: 10% 90% / 1fr 1fr;
     grid-template-areas: "title-container ."
                          "featured-img featured-text";
+    justify-content: center;
     gap: 1em;
 }
 

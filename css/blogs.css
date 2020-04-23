@@ -19,7 +19,7 @@ body {
 
 .home-container {
     display: grid;
-    grid-template-rows: 3% 93% 4%;
+    grid-template-rows: 5% 90% 5%;
     grid-template-areas: "header"
                          "blogs-main"
                          "footer";
@@ -164,6 +164,29 @@ gap: 10px;
     border-bottom: 1px solid tomato;  
     padding: 1em 0;
     text-align: center;  
+}
+
+.blogs-button {
+    border: 1px solid #48CFAD;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: #48CFAD;
+    font-size: 12px;
+}
+
+.post-container {
+    display: inline-block;
+    padding: 5px;
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+
+.post-container p {
+    margin-bottom: 35px;
+}
+
+.post-container img {
+    width: 100%;
 }
 
 .footer {

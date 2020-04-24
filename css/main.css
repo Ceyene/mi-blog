@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
 
 html, body {
     margin: 0;
@@ -8,7 +8,7 @@ html, body {
     bottom: 0;
     left: 0;
     right: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -121,7 +121,7 @@ gap: 10px;
 .home-main {
     grid-area: home-main;
     display: grid;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .home-main-text-container {
@@ -146,6 +146,7 @@ gap: 10px;
     text-align: center;
     border-radius: 5px;
     background-color: #48CFAD;
+    align-self: flex-start;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -154,7 +155,7 @@ gap: 10px;
 
 @media only screen and (max-width: 768px) {
     .home-main-text {
-        font-size: 26px;
+        font-size: 30px;
         letter-spacing: 1%;
     }
     .icons-container {
@@ -186,7 +187,7 @@ gap: 10px;
 
 @media only screen and (max-width: 480px) {
     .home-main-text {
-        font-size: 1.1em;
+        font-size: 1.5em;
         letter-spacing: 0,3%;
     }
     .profile-link a {
@@ -198,5 +199,11 @@ gap: 10px;
 }
 
 @media only screen and (max-width: 320px) {
+    .home-main-text {
+        font-size: 1.1em;
+    }
 
+    .home-main-button {
+        align-self: center;
+    }
 }

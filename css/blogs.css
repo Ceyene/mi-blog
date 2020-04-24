@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: white;
     height: 100%;
     box-sizing: border-box;
@@ -99,14 +99,19 @@ header {
     align-items: center;
 }
 
+.title-container h3 {
+    text-transform: uppercase;
+}
+
 .featured-img-container {
     grid-area: featured-img;
+    display: grid;
     justify-items: center;
 }
 
 .featured-img-container img {
     max-width: 500px;
-    width: 85%;
+    width: 90%;
 }
 
 .featured-text-container {
@@ -126,7 +131,8 @@ header {
 
 .title-posts h3 {  
     padding: 1em 0;
-    text-align: center;  
+    text-align: center;
+    text-transform: uppercase;  
     border-bottom: 2px solid tomato;
 }
 
@@ -236,6 +242,41 @@ header {
     .icons-container {
         display: none;
     }
+    .featured-post {
+        display: grid;
+        grid-template: auto auto auto / 1fr;
+        grid-template-areas: "title-container ."
+                             "featured-img featured-text";
+        gap: 0.25em;
+    }
+    
+    .featured-img-container img {
+        width: 100%;
+    }
+
+    .title-container {
+        grid-area: title-container;
+        padding: 0.5em 0;
+        height: auto;
+        align-items: center;
+    }
+    
+    .featured-img-container {
+        grid-area: featured-img;
+        justify-items: center;
+    }
+        
+    .featured-text-container {
+        grid-area: featured-text;
+        width: 100%;
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .blogs-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 45%);
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -245,8 +286,42 @@ header {
         text-align: right;
         font-weight: 700;
     }
+
+    .blogs-posts {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+
+    .post-container {
+        max-width: 350px;
+        padding: 5%;
+    }
+
+    .featured-post {
+        grid-template-rows: 2em 16em 18em;
+    }
+
+    .featured-img-container {
+        align-items: center;
+    }
+
 }
 
 @media only screen and (max-width: 320px) {
+    .featured-post {
+        grid-template-rows: 2em 11em 18em;
+    }
+    
+    .title-container {
+
+    }
+    
+    .featured-img-container {
+
+    }
+        
+    .featured-text-container {
+
+    }
 
 }

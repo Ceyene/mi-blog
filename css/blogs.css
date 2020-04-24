@@ -311,17 +311,6 @@ header {
     .featured-post {
         grid-template-rows: 2em 11em 18em;
     }
-    
-    .title-container {
-
-    }
-    
-    .featured-img-container {
-
-    }
-        
-    .featured-text-container {
-
-    }
+}
 
 }

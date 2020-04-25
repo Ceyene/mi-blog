@@ -274,9 +274,9 @@ header {
     }
     
     .blogs-posts {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 45%);
-
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 45%);
+    }
 }
 
 @media only screen and (max-width: 480px) {

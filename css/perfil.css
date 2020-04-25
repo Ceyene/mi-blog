@@ -71,78 +71,58 @@ header {
     border-bottom-left-radius: 50px;
 }
 
-.blogpost-img {
-    width: 90%;
-    max-height: 370px;
-    object-fit: contain;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.blogpost-img img {
-    width: 100%;
-}
-
-.blogpost-main h3 {
-    margin: 0;
-    padding: 1em 0;
-    text-transform: uppercase;
-    border-bottom: 1px solid tomato;
-}
-
-.blogpost-main h1 {
-    font-size: 35px;
-}
-
-.blogpost-main article {
-    padding-bottom: 1em;
-}
-
-.call-to-action {
-    border: 2px dotted tomato;
-    margin: 1em;
-    padding: 1em;
-}
-
-.call-to-action a {
-    color: tomato;
-    font-weight: 700;
-}
-
-.main-comments {
-    border-top: 1px solid black;
-    padding: 0.5em 0.5em 3em 0.5em;
-}
-
-.comment-container {
-    padding: 0.5em;
-    margin-top: 0.5em;
+.profile {
+    grid-area: featured-post;
+    background-color: rgb(236, 130, 112);
+    padding: 1em 5%;
     display: grid;
-    grid-template-columns: 5vw 73vw;
-}
-
-.user-img {
-    max-width: 50px;
-    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-template-areas: "profile-img profile-txt";
     justify-content: center;
+    gap: 1em;
 }
 
-.user-img img {
+.profile-img-container {
+    grid-area: profile-img;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.profile-img-container img {
+    max-width: 500px;
     width: 100%;
 }
 
-.comment {
+.profile-text-container {
+    grid-area: profile-txt;
+    max-width: 780px;
+    width: 100%;
+    padding: 2em 0;
+}
+
+.title-projects {
+    margin-bottom: 1em;
+}
+
+.title-projects h3 {  
+    padding: 1em 0;
+    text-align: center;
+    text-transform: uppercase;  
+    border-bottom: 2px solid tomato;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 30%);
+    gap: 1em;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 2em;
+}
+
+.projects article {
     padding: 0.5em;
-}
-
-.comment h4 {
-    color: #48CFAD;
-}
-
-.comment p {
-    margin: 0;
-    font-size: 12px;
 }
 
 .contact {
@@ -272,6 +252,19 @@ header {
     }
     .icons-container {
         display: none;
+    }
+
+    .profile {
+        display: grid;
+        grid-template: auto auto / 1fr;
+        grid-template-areas: "profile-img"
+                             "profile-txt";
+        gap: 0.25em;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 100%);
     }
 
     .contact-main {

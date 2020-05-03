@@ -42,7 +42,7 @@ header {
     grid-template-columns: 1fr 1fr;
     height: 10vh;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 .nav-logo-container {

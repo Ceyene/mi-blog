@@ -8,6 +8,7 @@ Realizado a partir de diversos cursos de diseño web front-end 👩‍💻
 
 - HTML
 - CSS
-- CSS Grid
-- Responsive Design
+- - CSS Grid
+- - Flexbox
+- - Responsive Design
 

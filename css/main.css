@@ -92,16 +92,18 @@ nav {
     background-color: #48CFAD;
     margin-bottom: 40px;
 }
-/* Finaliza Mensaje de bienvenida */
+/* Finaliza Mensaje de Bienvenida */
 
-/*Comienza sección post destacado*/
-.featured {
+/*Comienzan Secciones Post Destacado y Mi Perfil*/
+.featured,
+.profile {
     background-color: rgb(236, 130, 112);
     padding: 1% 5% 2% 5%;
     margin: 0 10% 0 10%;
 }
 
-.featured-post {
+.featured-post,
+.profile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,36 +120,42 @@ nav {
     text-transform: uppercase;
 }
 
-.featured-img-container {
+.featured-img-container,
+.profile-img-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.featured-img-container img {
+.featured-img-container img,
+.profile-img-container img {
     max-width: 700px;
     width: 100%;
 }
 
-.featured-text-container {
-    width: 100%;
+.featured-text-container,
+.profile-text-container {
+    max-width: 700px;
     padding: 0 1em;
 }
-/*Finaliza sección post destacado*/
+/*Finalizan Secciones Post Destacado y Mi Perfil*/
 
-/* Sección posts*/
-.title-posts {
+/* Comienzan Secciones Posts y Proyectos*/
+.title-posts,
+.title-projects {
     margin-bottom: 1em;
 }
 
-.title-posts h3 {  
+.title-posts,
+.title-projects h3 {  
     padding: 1em 0;
     text-align: center;
     text-transform: uppercase;  
     border-bottom: 2px solid tomato;
 }
 
-.blogs-posts {
+.blogs-posts,
+.projects {
     max-width: 1200px;
     margin: 0 auto 10% auto;
     display: grid;
@@ -171,11 +179,13 @@ nav {
     display: inline-block;
 }
 
-.post-container h4 {
+.post-container,
+.projects h4 {
     margin: 0.5em;
 }
 
-.post-container p {
+.post-container,
+.projects p {
     padding: 0.3em;
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
@@ -184,7 +194,7 @@ nav {
 .post-container img {
     width: 100%;
 }
-/*Finaliza sección posts*/
+/*Finalizan Secciones Posts y Proyectos*/
 
 /*Comienza sección post individual*/
 

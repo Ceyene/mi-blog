@@ -63,12 +63,17 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, 45%);
     }
+    /*Sección contacto*/
+    .contact {
+        display: inherit;
+        padding-bottom: 10%;
+    }
+    .contact-img {
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 480px) {
-    h4 {
-        margin-block-end: 0;
-    }
     /*Texto de bienvenida*/
     .home-main-text {
         font-size: 1.5em;

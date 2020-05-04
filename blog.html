@@ -1,66 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Blog</title>
-    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="Assets/SocialMedia/font/flaticon.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="./Assets/favicon.png">
 </head>
 
-<body>
+<body class="sections">
 
-    <header>
-        <nav class="nav-container">
-            <section class="nav-logo-container">
-                <a href="./index.html">
-                    <img src="./Assets/Logo-negro.png" alt="Logo de mi blog">
-                </a>
-            </section>
-            <section class="profile-link">
-                <a href="perfil.html">Sobre mí</a>
-            </section>
-        </nav>
-    </header>
+    <nav>
+        <section class="nav-logo-container">
+            <a href="./index.html">
+                <img src="./Assets/Logo-negro.png" alt="Logo de mi blog">
+            </a>
+        </section>
+        <section class="profile-link">
+            <a href="perfil.html">Sobre mí</a>
+        </section>
+    </nav>
 
     <main>
         <section class="blogpost-img">
             <img src="https://cdn.pixabay.com/photo/2020/04/18/20/01/background-5060836__340.jpg" alt="">
         </section>
-        <section class="blogpost-main">
-            <div class="container">
-                <h3>Noticias</h3>
-                <article>
-                    <h1>Título del blogpost</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sapiente quam, ab culpa ratione
-                        possimus, porro autem debitis repudiandae exercitationem accusantium unde eius aut error cumque
-                        odio maiores, voluptatibus libero. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-                        animi nihil cum voluptatem accusamus? Magni aliquam exercitationem itaque harum, obcaecati
-                        quaerat, debitis nihil alias repudiandae aut sequi vero voluptatibus nisi. Lorem ipsum dolor sit
-                        amet consectetur adipisicing elit. Unde ipsam, dolore ad suscipit adipisci saepe ipsum sit,
-                        sequi voluptates maxime tempore quia ducimus aspernatur. Pariatur animi enim delectus ducimus
-                        voluptatibus.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat itaque quo eaque dolores nisi,
-                        delectus molestiae ab tempore cupiditate dolorum illum hic quae corrupti nostrum nulla
-                        reprehenderit. Voluptatem, ducimus culpa? Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Quisquam nisi adipisci illum, quos, aspernatur consequuntur aut saepe voluptas nemo omnis
-                        mollitia cum quae nobis labore aliquam maiores, neque nostrum rerum.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, laborum? Autem aperiam animi quia
-                        eligendi sunt temporibus natus vero tenetur! Obcaecati unde ipsa officiis dolorem suscipit eos
-                        tempore libero amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ab velit
-                        omnis minus incidunt provident? Praesentium repellat fugit ipsam numquam, necessitatibus cumque,
-                        vero veritatis at ab cupiditate accusamus aut esse.</p>
-                    <div class="call-to-action">
-                        <p>Si te gustó:
+        <section class="blogpost-main container">
+            <h3>Noticias</h3>
+            <article>
+                <h1>Título del blogpost</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sapiente quam, ab culpa ratione
+                    possimus, porro autem debitis repudiandae exercitationem accusantium unde eius aut error cumque
+                    odio maiores, voluptatibus libero. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+                    animi nihil cum voluptatem accusamus? Magni aliquam exercitationem itaque harum, obcaecati
+                    quaerat, debitis nihil alias repudiandae aut sequi vero voluptatibus nisi. Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Unde ipsam, dolore ad suscipit adipisci saepe ipsum sit,
+                    sequi voluptates maxime tempore quia ducimus aspernatur. Pariatur animi enim delectus ducimus
+                    voluptatibus.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat itaque quo eaque dolores nisi,
+                    delectus molestiae ab tempore cupiditate dolorum illum hic quae corrupti nostrum nulla
+                    reprehenderit. Voluptatem, ducimus culpa? Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Quisquam nisi adipisci illum, quos, aspernatur consequuntur aut saepe voluptas nemo omnis
+                    mollitia cum quae nobis labore aliquam maiores, neque nostrum rerum.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, laborum? Autem aperiam animi quia
+                    eligendi sunt temporibus natus vero tenetur! Obcaecati unde ipsa officiis dolorem suscipit eos
+                    tempore libero amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ab velit
+                    omnis minus incidunt provident? Praesentium repellat fugit ipsam numquam, necessitatibus cumque,
+                    vero veritatis at ab cupiditate accusamus aut esse.</p>
+                <div class="share">
+                    <p>Si te gustó:
                         <a href="#">Compartilo en redes sociales</a> o <a href="#">dejame tu comentario</a>.</p>
-                    </div>
-                    </article>
-            </div>
+                </div>
+            </article>
         </section>
-
+        
         <section class="main-comments container">
             <h3>Comentarios:</h3>
             <div class="comment-container">
@@ -82,26 +78,24 @@
                 </div>
             </div>
         </section>
-
+        
         <section class="contact">
-            <div class="contact-main container">
-                <div class="contact-left">
-                    <div class="contact-img">
-                        <img src="./Assets/IconosBlog/svg/013-newsletter.svg" alt="">
-                    </div>
-                    <div class="contact-text">
-                        <a href="#">Suscribirse</a>
-                        <p>No te pierdas ninguna de nuestras novedades.</p>
-                    </div>
+            <div class="contact-left">
+                <div class="contact-img">
+                    <img src="./Assets/IconosBlog/svg/013-newsletter.svg" alt="">
                 </div>
-                <div class="contact-right">
-                    <div class="contact-img">
-                        <img src="./Assets/IconosBlog/svg/006-like.svg" alt="">
-                    </div>
-                    <div class="contact-text">
-                        <a href="#">Contacto</a>
-                        <p>Escribinos por consultas o sugerencia de temas.</p>
-                    </div>
+                <div class="contact-text">
+                    <a href="#">Suscribirse</a>
+                    <p>No te pierdas ninguna de nuestras novedades.</p>
+                </div>
+            </div>
+            <div class="contact-right">
+                <div class="contact-img">
+                    <img src="./Assets/IconosBlog/svg/006-like.svg" alt="">
+                </div>
+                <div class="contact-text">
+                    <a href="#">Contacto</a>
+                    <p>Escribinos por consultas o sugerencia de temas.</p>
                 </div>
             </div>
         </section>

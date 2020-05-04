@@ -28,7 +28,8 @@ a {
 }
 
 h2,
-h3 {
+h3,
+h4 {
     margin-block-start: 0;
     margin-block-end: 0;
 }
@@ -170,6 +171,10 @@ nav {
     display: inline-block;
 }
 
+.post-container h4 {
+    margin: 0.5em;
+}
+
 .post-container p {
     padding: 0.3em;
     margin-block-start: 0.5em;
@@ -180,6 +185,134 @@ nav {
     width: 100%;
 }
 /*Finaliza sección posts*/
+
+/*Comienza sección post individual*/
+
+.blogpost-img {
+    width: 90%;
+    max-height: 370px;
+    object-fit: contain;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blogpost-img img {
+    width: 100%;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+    width: 80%;
+}
+
+.blogpost-main h3 {
+    padding: 1em 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid tomato;
+}
+
+.blogpost-main h1 {
+    font-size: 35px;
+}
+
+.blogpost-main article {
+    padding-bottom: 1em;
+}
+
+.share {
+    border: 2px dotted tomato;
+    margin: 1em;
+    padding: 1em;
+}
+
+.share a {
+    color: tomato;
+    font-weight: 700;
+}
+
+/*Sección comentarios*/
+.main-comments {
+    border-top: 1px solid black;
+    padding: 0.5em 0.5em 3em 0.5em;
+}
+.comment-container {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+.user-img {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-img img {
+    width: 100%;
+}
+
+.comment {
+    padding-left: 1.5em;
+    max-width: 60%;
+}
+
+.comment h4 {
+    color: #48CFAD;
+}
+
+.comment p {
+    margin: 0;
+    font-size: 14px;
+}
+/*Fin Sección Comentarios*/
+
+/*Finaliza Sección Post Individual*/
+
+/*Inicia Sección Contacto*/
+.contact {
+    background-color: #a6acaa;
+    padding: 1% 10% 5% 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-left,
+.contact-right {
+    display: flex;
+}
+
+.contact-img {
+    margin: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contact-img img {
+    width: 100px;
+}
+
+.contact-text {
+    padding: 5%;
+    text-align: left;
+    max-width: 250px;
+}
+
+.contact-text p {
+    padding: 0;
+    margin-block-start: 0.3em;
+}
+
+.contact-text a {
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+}
+/*Finaliza Sección Contacto*/
 
 /*Íconos de redes sociales en pie de página*/
 .footer-icons {
